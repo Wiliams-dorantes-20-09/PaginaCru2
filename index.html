@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Proyecto Automatas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+
+  <link href="assets/frameworks/aos/aos.css" rel="stylesheet">
+  <link href="assets/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/frameworks/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/frameworks/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/frameworks/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/frameworks/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">CRU2</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="#about">Proyecto</a></li>
+          <li class="dropdown"><a href="#services">I. Teora de Lenguajes F<span></span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#alf">1.1 Alfabeto</a></li>
+              <li><a href="#cadenas">1.2 Cadenas</a></li>
+              <li><a href="#tipos">1.3 Lenguaje, tipos y herramientas</a></li>
+              <li><a href="#estructura">1.4 Estructura de un traductor</a></li>
+              <li><a href="#compilador">1.5 Fases de compilador</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#portfolio"><span>Expresiones Regulares</span> <i
+                class="bi bi-chevron-right"></i></a>
+            <ul>
+              <li><a href="#">2.1 Definición formal de una ER</a></li>
+              <li><a href="#">2.2 Diseño de ER</a></li>
+              <li><a href="#">2.3 Aplicaciones en problemas reales</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#team">Intregrantes</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>CONSTRUCTION REALIZATION UNEXPECTED SOFTWARE 2</h1>
+          <h2>Proyecto realizado por alumnos de ingeniería en sistemas 3601 para la materia de Lenguajes y Automatas 1
+          </h2>
+          <h2>Profesor: ING. TOMAS MARTIN MANCO TORO</h2>
+          <div><a href="#about" class="btn-get-started scrollto">Proyecto</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <p class="fst-italic">
+            <h3>Información del Proyecto</h3>
+            En este proyecto presentaremos lo que anteriormente hicimos en la clase de Lenguajes y Automatas
+            al mismo tiempo demostrando los conceptos con su information y un pequeño ejemoplo
+            </p>
+
+            <p>Esta pagina fue hecha para subir las evidencias de las actividades de la materia lenguajes y autómatas
+              I del instituto tecnológico TESVG de la carrera de ingenieria de sistemas computacionales</p>
+            <p>los integrantes de este esta pagina son los siguientes:</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> JOSE WILIAMS DORANTES VAZQUEZ</li>
+              <li><i class="bi bi-check-circle"></i> JUAN CARLOS ROSALES GALINDO</li>
+              <li><i class="bi bi-check-circle"></i>ERICK VILLA CALVO</li>
+              <li><i class="bi bi-check-circle"></i> LEONARDO HAZEL DÍAZ CARBAJAL</li>
+              <li><i class="bi bi-check-circle"></i>YASSEL YAIR GONZALEZ QUIROZ</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+
+          <h2>Breve descripción de las unidades</h2>
+
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1">UNIDAD 1 <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  ¿A que se le llama un lenguaje formal?
+
+                  conjunto de palabras (cadena de caracteres) de longitud finita formado a partir de un alfabeto
+                  (conjunto de caracteres finitos).</p>
+
+                <p>¿Cuales son las diferencias entre lenguajes y autómatas y sus características?
+
+                  un lenguaje es un conjunto de caracteres determinados que forman sentencias e instrucciones, mientras
+                  que los autómatas son los componentes (ordenadores digitales) que permiten manejar los lenguajes por
+                  medio de instrucciones determinadas y finitas.
+                </p>
+                <p> ¿Cual es la historia y cronología de lenguajes y autómatas?
+
+                  En los años 30
+
+                  se desarrolla la teoría de la computabilidad a base de los descubrimientos de godel, turing, post,
+                  church y kleene.
+                  En 1931 godel desarrolla la teoria de la incompletitud
+                  En 1936 church propuso un esquema de funciones definibles
+                  Se desarrolla las funciones f-cursivas de herbrand-godel
+                  Turing maneja su concepto abstracto de maquina de funciones calculables conocido como tesis de turing
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed">UNIDAD 2 <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Utilizado en muchos lugares como un lenguaje para describir patrones en texto que son sencillos pero
+                  muy útiles.
+                  Pueden definir exactamente los mismos lenguajes que los autómatas pueden describir: Lenguajes
+                  regulares.
+                  Ofrecen algo que los autómatas no: Manera declarativa de expresar las cadenas que queremos aceptar.
+                  Dado un alfabeto Dado un alfabeto Σ, una , expresión regular sobre expresión regular sobre Σ se define
+                  de forma recursiva:
+                </p>
+                <p>
+
+                  ER primitivas: Φ, λ, {a | a ЄЄЄ Σ Є}
+                  Si α y β son ER, entonces son también ER: α + β (unión), α β (concatenación), α* (cierre), (α).
+                  No existen otras reglas para la construcción de ER sobre Σ.
+                  Ejemplos de usos.</p>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>HTML</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>BOOTSTRAP</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>JAVASCRIPT</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>CSS</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Introducción a la Teora de Lenguajes Formales</h2>
+
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                  </path>
+                </svg>
+                <i class="bx bxl-dribbble"></i>
+              </div>
+              <h4><a href="alf">1.1 Alfabeto</a></h4>
+              <p>Símbolo: Es una entidad abstracta (indivisible) ya sea letras, dígitos o caracteres. Los símbolos
+                también pueden estar formados por varias letras o caracteres.
+              </p>
+              <p> Ejemplos: </p>
+              <p> V1= { a, b, c, d, ... z }
+                V2 = { 0, 1 }
+                Java = { {, }, for, if, else, while, ...</p>
+              <p>Alfabeto: Conjunto no vació cuyos elementos se llaman símbolos, se denomina por ∑</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-orange ">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                  </path>
+                </svg>
+                <i class="bx bx-file"></i>
+              </div>
+              <h4><a href="">1.2 Cadenas</a></h4>
+              <p>Cadena o palabra: Secuencia finita de símbolos de un determinado alfabeto.
+                Cadena vacía: Denotada por λ. La palabra vacía pertenece a los lenguajes universales de todos los
+                alfabetos posibles.
+                Longitud de cadena: Es el numero de símbolos que contiene.</p>
+              <p> | λ | = 1
+                | aba | = 3
+                | 010 | = 3</p>
+              <p>Ejemplo:
+                Si w = abra y v = cada
+                Entonces
+                wvbra = abracadabra</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                  </path>
+                </svg>
+                <i class="bx bx-tachometer"></i>
+              </div>
+              <h4><a href="">1.3 Lenguaje, tipos y herramientas</a></h4>
+              <p>Lenguaje: Subconjunto del universo del discurso. Conjunto de palabras de un determinado alfabeto. "El
+                alfabeto Σ es también un lenguaje sobre Σ.".
+              </p>
+              <p>
+                Lenguaje vació: Es aquel que no contiene la cadena vacía ni ninguna otra cadena.
+                Cardinal ( { Ø } ) = 0
+                Cardinal ( { λ } ) = 1</p>
+              <p>Clausula (cierre) positiva de un lenguaje: El lenguaje obtenido uniendo el lenguaje L con todas sus
+                potencias posibles, excepto L0. Obviamente, ninguna clausura positiva contiene la palabra vacía, a menos
+                que dicha palabra esté en L. Puesto que el alfabeto Σ es también un lenguaje sobre Σ, puede aplicársele
+                esta operación. Se verá entonces que:
+
+                L+ = L1 U L2 U L3....
+
+                W(∑) = Lenguaje universal de ∑.
+
+                ∑+ = W(∑) - { λ }</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                  </path>
+                </svg>
+                <i class="bx bx-layer"></i>
+              </div>
+              <h4><a href="">1.4 Estructura de un traductor</a></h4>
+              <p>Un traductor es un programa que tiene como entrada un texto escrito en un lenguaje (lenguaje fuente) y
+                como salida produce un texto escrito en un lenguaje (lenguaje objeto) que preserva el significado de
+                origen.</p>
+              <img src="assets/img/compiler/Untitled.png" alt="imgaa">
+              <p>
+                En el proceso de traducción se identifican dos faces principales:</p>
+              <img src="assets/img/compiler/Untitled2.png" alt="imagesss">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-red">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                  </path>
+                </svg>
+                <i class="bx bx-slideshow"></i>
+              </div>
+              <h4><a href="">1.5 Fases de un compilador</a></h4>
+              <p>Fase de analisis.</p>
+              <img src="assets/img/compiler/sis.png" alt="imgaa">
+              <p>
+                Fase de síntesis</p>
+              <img src="assets/img/compiler/sin.png" alt="imagesss">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Expresiones Regulares</h2>
+          <p>Utilizado en muchos lugares como un lenguaje para describir patrones en texto que son sencillos pero muy
+            útiles.
+            Pueden definir exactamente los mismos lenguajes que los autómatas pueden describir: Lenguajes regulares.
+            Ofrecen algo que los autómatas no: Manera declarativa de expresar las cadenas que queremos aceptar.
+            Dado un alfabeto Dado un alfabeto Σ, una , expresión regular sobre expresión regular sobre Σ se define de
+            forma recursiva:.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-receipt"></i>
+              <h4>2.1 Definición formal de una ER</h4>
+              <p>
+
+                ER primitivas: Φ, λ, {a | a ЄЄЄ Σ Є}
+                Si α y β son ER, entonces son también ER: α + β (unión), α β (concatenación), α* (cierre), (α).
+                No existen otras reglas para la construcción de ER sobre Σ.
+                Ejemplos de usos.
+
+                Comandos de búsqueda, e.g., grep de UNIX.
+                sistema de formato de texto: Usan notación de tipo expresión regular para describir patrones.
+                Convierte la expresión regular a un DFA o un NFA y simula el autómata en el archivo de búsqueda.
+                Generadores de analizadores – Léxicos. Como Lex o Flex.
+                Los analizadores léxicos son parte de un compilador. Dividen el programa fuente en unidades lógicas
+                (tokens) divide el programa fuente en unidades.
+                Produce un DFA que reconoce el token.
+                Las expresiones regulares denotan lenguajes.
+
+              </p>
+            </div>
+
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-cube-alt"></i>
+              <h4>2.2.-Diseño en ER.</h4>
+              <p>Unión o Alternativa: Consideremos dos lenguajes diferentes definidos sobre el mismo alfabeto L1 ⊂ W(∑)
+                y L2 ⊂ W(∑). Se denomina unión de ambos lenguajes al lenguaje formado por las palabras de ambos
+                lenguajes:
+                L1 U L2={ x | x ∈ L1 ó x ∈ L2}
+
+                Concatenación: Consideremos dos lenguajes definidos sobre el mismo alfabeto, L1 y L2. La concatenación o
+                producto de estos lenguajes es el lenguaje L1 L2= { xy / x ∈ L1 y x ∈ L2} Las palabras de este lenguaje
+                estarán formadas al concatenar cada una palabra del primero de los lenguajes con otra del segundo.
+
+                La concatenación de lenguajes con el lenguaje vació es ΦL = L Φ = Φ
+
+                Potencia de un lenguaje: Se define la potencia i-ésima de un lenguaje a la operación de concatenarlo
+                consigo mismo i veces.
+
+                Li= LLL ....L
+
+                |------------|
+                i
+                Clausura positiva de un lenguaje: Se define la clausura positiva de un lenguaje L:
+                ∞
+                L + = U L i
+                i=1
+                Lenguaje obtenido uniendo el lenguaje; con todas sus potencias posibles excepto Lº. Si L no contiene la
+                palabra vacía, la clausura positiva tampoco</p>
+            </div>
+
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-images"></i>
+              <h4>2.3 Aplicaciones en problemas reales.</h4>
+              <p>Una de las principales aplicaciones de los hermanos Deitel, son las expresiones regulares que facilitan
+                la construcción de un compilador. A menudo se utiliza una expresión regular larga y compleja para
+                validar la sintaxis de un programa. Si el código del programa no concuerda con la expresión regular, el
+                compilador sabe que hay un error de sintaxis dentro del código.
+
+                Generalmente convierten la expresión regular a un autómata finito no determinista y después construyen
+                el autómata finito determinista.
+
+                Otra aplicación del mismo libro es en los editores de texto. También encontramos a las expresiones
+                regulares en la biología molecular. También hay esfuerzos importantes para tratar de representar cadenas
+                como generadas por expresiones regulares o por lenguajes regulares.</p>
+            </div>
+
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/features.svg" alt="" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="team" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>integrantes</h2>
+          <p>Alumnos de la carrera ingenieria en sistemas computacionales frupo 3601 que desarrollaron esta pagina</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Durante mucho tiempo no entendía cómo algo tan caro y puntero podía ser tan inútil.
+                  Y entonces me vino a la mente que un ordenador es una máquina estúpida con la habilidad de hacer cosas
+                  increíblemente
+                  inteligentes, mientras que los programadores son inteligentes personas con la habilidad de hacer cosas
+                  estúpidas.
+                  Son, en resumen, una pareja perfecta
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/integrantes/wiliams.png" class="testimonial-img" alt="">
+                <h3>JOSE WILIAMS DORANTES VAZQUEZ</h3>
+                <h4>Principal desarrollador web</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  No te preocupes si todo no funciona bien. Si todo estubiera correcto, serias despeddo de tu trabajo.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/integrantes/juan.jpg" class="testimonial-img" alt="">
+                <h3>JUAN CARLOS ROSALES GALINDO</h3>
+                <h4>Desarrollador en C#</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  El logro más impresionante de la industria del software es su continua anulación de los
+                  constantes y asombrosos logros de la industria del hardware.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/integrantes/erick.jpg" class="testimonial-img" alt="">
+                <h3>ERICK VILLA CALVO</h3>
+                <h4>Principal programador en JavaScript</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  ¡No me importa si funciona en tu maquina! ¡No estamos vendiendo tu maquina!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/integrantes/leo.jpeg" class="testimonial-img" alt="">
+                <h3>LEONARDO HAZEL CARBAJAL </h3>
+                <h4>Principal funcionario de html</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  El buen codigo es tu mejor documentacion.
+                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/integrantes/itachi.jpeg" class="testimonial-img" alt="">
+                <h3>YASSEL YAIR GONZALEZ QUIROZ</h3>
+                <h4>Principal investigador</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>contactanos </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Nuestra dirección</h3>
+              <p>C. Amaxalco S/N, San Miguel, Zumpahuacan Mexico</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Nuestro correo</h3>
+              <p>545mkds5cp@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Llámenos</h3>
+              <p>+52 722 419 2080</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Cargando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">
+                  Enviar mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+
+  </main>
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="copyright-wrap d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright <strong><span>EQUIPO CRU2</span></strong>. TODOS LOS DERECHOS RESERVADOS
+            </div>
+            <div class="credits">
+           
+
+              Diseñada por <a href="https://bootstrapmade.com/">JOSE WILIAMS DORANTES VAZQUEZ</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+
+  <script src="assets/frameworks/purecounter/purecounter.js"></script>
+  <script src="assets/frameworks/aos/aos.js"></script>
+  <script src="assets/frameworks/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/frameworks/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/frameworks/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/frameworks/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/frameworks/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
